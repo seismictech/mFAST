@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/item_name_textview"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:background="@drawable/textview_shape"
+        android:text="ACT HIB 0.5ml Injection 10 Vials+ 10 Amps"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/item_quantity_editext"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+       	android:gravity="center"
+        android:ems="10"
+        android:background="@drawable/edittextview_background"
+        android:inputType="numberDecimal" >
+    </EditText>
+</LinearLayout>

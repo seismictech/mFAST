@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mfast.square.ordercollection"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mfast"
+        android:label="@string/order_collection"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mfast.square.ordercollection.OrderStartActivity"
+            android:label="@string/order_collection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.CustomerSelectionActivity"
+            android:label="@string/title_activity_customer_selection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.ProductsActivity"
+            android:label="Products"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.ProductSelectionSummeryActivity"
+            android:label="@string/title_activity_product_selection_summery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.SummeryActivity"
+            android:label="@string/title_activity_summery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.DraftsActivity"
+            android:label="Draft Box"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.InboxActivity"
+            android:label="Inbox"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.SentBoxActivity"
+            android:label="Sent Box"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mfast.square.ordercollection.DirectedProductsActitivity"
+            android:label="Product Selection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <receiver android:name="com.mfast.square.ordercollection.SMSReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+                <data
+                    android:host="*"
+                    android:port="5901"
+                    android:scheme="sms" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.mfast.square.ordercollection.OrderSelectionActivity"
+            android:label="Customer Info"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_back"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Back"/>
+    <item
+        android:id="@+id/menu_send_selected"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Send Selected"/>
+    <item
+        android:id="@+id/menu_select_all"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Select All"/>
+    <item
+        android:id="@+id/menu_delete_selected"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Delete Selected"/>
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mFast Order Collection</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="order_collection">Order Collection</string>
+
+    <string-array name="session_array">
+        <item>Evening</item>
+        <item>Morning</item>
+    </string-array>
+    <string-array name="sync_array">
+        <item>Normal Sync</item>
+        <item>Complete Sync</item>
+    </string-array>
+
+    <string name="strCity">Sydney</string>
+    <string name="strWeather">Sunny</string>
+    <string name="strTemp">32°C</string>
+    <string name="txtTemp">Temp</string>
+    <string name="strWindSpeed">5kmph</string>
+    <string name="txtWindSpeed">WindSpeed</string>
+    <string name="Separator">---</string>
+    <string name="title_activity_customer_selection">Customer Selection</string>
+    <string name="title_activity_product_selection_summery">Selection Summary</string>
+    <string name="title_activity_summery">Summary</string>
+    <string name="DraftOrder">2</string>
+    <string name="SentBoxOrder">1</string>
+    <string name="NormalOrder">0</string>
+    <string name="OrderIndex">index</string>
+    <string name="DATA">data</string>
+    <string name="NAVIGATE">21</string>
+    <string name="EXPAND">22</string>
+    <string name="FORM_CONTENT">formContent</string>
+    <string name="SHEET_CONTENT">sheetContent</string>
+    <string name="FORMAT_STRING">formatString</string>
+    <string name="ORDER_ID">orderId</string>
+    <string name="GPRS">gprs</string>
+    <string name="SMS">sms</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_order_selection">OrderSelectionActivity</string>
+</resources>

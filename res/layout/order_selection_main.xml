@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+    <HorizontalScrollView
+        android:id="@+id/tab_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar_black"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+            <!-- First Tab -->
+            <LinearLayout
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab1"
+                    style="@style/text_title"
+                    android:text="Order" />
+                <LinearLayout
+                    android:id="@+id/tab1_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/action_bar_h_line_color" />
+            <LinearLayout
+                android:id="@+id/orderstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab2"
+                    style="@style/text_title"
+                    android:text="Order Status" />
+                <LinearLayout
+                    android:id="@+id/tab2_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/action_bar_h_line_color" />
+            <!-- Second Tab -->
+            <LinearLayout
+                android:id="@+id/customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab3"
+                    style="@style/text_title"
+                    android:text="Customer" />
+                <LinearLayout
+                    android:id="@+id/tab3_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/action_bar_h_line_color" />
+            <LinearLayout
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab4"
+                    style="@style/text_title"
+                    android:text="Product" />
+                <LinearLayout
+                    android:id="@+id/tab4_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/action_bar_h_line_color" />
+            <LinearLayout
+                android:id="@+id/dataBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab5"
+                    style="@style/text_title"
+                    android:text="Data Box" />
+                <LinearLayout
+                    android:id="@+id/tab5_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/action_bar_h_line_color" />
+            <LinearLayout
+                android:id="@+id/sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tab6"
+                    style="@style/text_title"
+                    android:text="Sync" />
+                <LinearLayout
+                    android:id="@+id/tab6_indicator"
+                    style="@style/indicator_style"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
